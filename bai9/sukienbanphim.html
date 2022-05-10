@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onkeydown="dichuyen()">
+<img width="400" id="anh" style= "position: relative;left: 0;top: 0 "  src="https://longwoodgardens.org/sites/default/files/highlight_images/76758.jpg" alt="">
+<script>
+    // function sangPhai() {
+    //     img=document.getElementById('anh')
+    //     img.style.left=parseInt(img.style.left)+ 20+ 'px'
+    // }
+    function dichuyen() {
+        switch (event.keyCode){
+            case 38:
+                img=document.getElementById('anh')
+                img.style.top=parseInt(img.style.top)- 20+ 'px'
+                break
+            case 40:
+                img=document.getElementById('anh')
+                img.style.top=parseInt(img.style.top)+ 20+ 'px'
+                break
+            case 37:
+                img=document.getElementById('anh')
+                img.style.left=parseInt(img.style.left)- 20+ 'px'
+                break
+            case 39:
+                img=document.getElementById('anh')
+                img.style.left=parseInt(img.style.left)+ 21+ 'px'
+        }
+    }
+
+</script>
+</body>
+</html>
