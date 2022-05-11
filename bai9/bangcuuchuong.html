@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x,y,bang
+    bang = "<table border='1' width='300' cellSpacing='0' cellPadding='15'>"
+    debugger;
+    for (i=2;i<9;i++){
+    bang=bang+ "<tr>"
+    for (j=1;j<10;j++){
+        bang=bang+ "<td>"+ j + "*" + i + "=" + (i * j) + "</td>"
+    }
+    bang=bang+"</tr>";
+    j=1
+    i++
+}
+    bang=bang + "</table>"
+    document.write(bang)
+</script>
+</body>
+</html>
