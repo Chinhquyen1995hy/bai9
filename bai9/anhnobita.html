@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body onkeydown="nut()">
+
+    <img id="nobita" style="position:relative;left:0; top:0;" src="https://tse3.mm.bing.net/th?id=OIP.E9HNeBpYIP5SPFvXTQx8zQHaGC&pid=Api&P=0&w=197&h=161"/>
+
+<script>
+
+    function up() {
+        let img = document.getElementById("nobita");
+        img.style.top = parseInt(img.style.top) - 50 + 'px';
+    }
+    function down(){
+        let img= document.getElementById('nobita');
+        img.style.top = parseInt(img.style.top) + 50 +'px'
+    }
+    function left(){
+        let img= document.getElementById('nobita')
+        img.style.left = parseInt(img.style.left) - 50 +'px'
+    }
+    function right(){
+        let img= document.getElementById('nobita')
+        img.style.left = parseInt(img.style.left) + 50 +'px'
+    }
+    function nut() {
+        switch (event.keyCode) {
+            case 38:
+
+                up();
+                break;
+            case 37 :
+                left();
+                break;
+            case 40 :
+                down();
+                break;
+            case 39 :
+                right();
+                break;
+        }
+    }
+    // function docReady() {
+    //     window.addEventListener('keydown', nut);
+    // }
+</script>
+</body>
+</html>
