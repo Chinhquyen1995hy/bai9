@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let f0=0
+  let f1=1
+  let i
+  let fn
+  for (i=0;i<20;i++){
+      fn = f0 + f1
+      f0 = f1
+      f1 = fn
+      console.log(fn)
+  }
+</script>
+</body>
+</html>
